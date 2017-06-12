@@ -1,0 +1,233 @@
+"*":
+  Zen: {}
+  "accents-ui":
+    accentColor:
+      alpha: 1
+      blue: 200
+      green: 157
+      red: 50
+    hexColor: "#329dc8"
+  "atom-beautify":
+    general:
+      _analyticsUserId: "095a40eb-6cc8-4637-ab7f-2770be2560be"
+  "atom-jshint":
+    hintOnModify: false
+  "auto-update-packages": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+    fileBlacklist: [
+      ".log"
+    ]
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-ruby": {}
+  autosave:
+    enabled: true
+  core:
+    allowPendingPaneItems: false
+    disabledPackages: [
+      "language-mustache"
+      "linter-haml"
+      "deprecation-cop"
+      "overrides"
+      "autocomplete-paths"
+      "linter-foodcritic"
+      "linter-less"
+      "line-ending-selector"
+      "org"
+      "terminal-plus"
+      "glowing-cursor"
+      "pigments"
+      "minimap-autohide"
+      "linter-rubocop"
+      "linter"
+      "linter-proselint"
+      "minimap-cursorline"
+    ]
+    packagesWithKeymapsDisabled: [
+      "ruby-test-switcher"
+    ]
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  "easy-motion": {}
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 16
+    invisibles: {}
+    preferredLineLength: 120
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+    softWrapHangingIndent: 4
+  emmet: {}
+  "exception-reporting":
+    userId: "a98159d9-1fe0-0af8-8f55-d78a80ba6738"
+  "filetype-color":
+    enabled: "false"
+  "find-and-replace":
+    focusEditorAfterSearch: true
+    openProjectFindResultsInRightPane: true
+  "fuzzy-finder":
+    preserveLastSearch: true
+    useAlternateScoring: true
+  "git-diff": {}
+  "git-plus": {}
+  "glowing-cursor":
+    cursorWidth: 2
+    glowColor:
+      alpha: 1
+      blue: 255
+      green: 213
+      red: 65
+    innerColor:
+      alpha: 1
+      blue: 255
+      green: 213
+      red: 54
+  "highlight-line": {}
+  "isotope-ui":
+    backgroundColor: "false"
+    backgroundImagePath: "/Users/cm022291/PIctures/rainy_night.png"
+    customBackgroundColor: true
+    customBackgroundColorPicker:
+      alpha: 1
+      blue: 52
+      green: 39
+      red: 41
+    fontFamily: "Ubuntu"
+    fontWeight: "Regular"
+    lowContrastTooltip: true
+    spaciousMode: true
+  "jasmine-runner": {}
+  jshint:
+    validateOnlyOnSave: true
+  jumpy: {}
+  linter:
+    clearOnChange: true
+    errorPanelHeight: 151
+    ignoredLinterErrors: [
+      "foodcritic"
+    ]
+    lintOnChange: false
+    lintOnFly: false
+    showErrorPanel: false
+    statusBar: "Show error of the selected line"
+  "linter-foodcritic": {}
+  "linter-jshint":
+    jshintExecutablePath: "/usr/local/bin/jshint"
+  "linter-rubocop": {}
+  "merge-conflicts": {}
+  minimap:
+    plugins:
+      codeglance: true
+      codeglanceDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "minimap-autohide": false
+      "minimap-autohideDecorationsZIndex": 0
+  "minimap-codeglance":
+    numberOfLines: 9
+  "omni-ruler":
+    columns: [
+      "80"
+      "120"
+    ]
+  "one-dark-ui": {}
+  "open-recent":
+    maxRecentFiles: 10
+  "outline-selection":
+    outlineColor:
+      alpha: 1
+      blue: 255
+      green: 190
+      red: 61
+    outlineOpacity: 0.75
+    outlineWidth: 2
+  racer:
+    cargoHome: "~/.cargo"
+    racerBinPath: "/Users/cm022291/.cargo/bin/racer"
+  react: {}
+  rspec:
+    command: "bundle exec rspec"
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  "steam-pirate-ui":
+    blurBackground: "5"
+  swackets: {}
+  tabs: {}
+  term2:
+    cursorBlink: false
+    shellArguments: "--login"
+  "terminal-plus":
+    core: {}
+    style:
+      animationSpeed: 2
+    toggles:
+      autoClose: true
+      cursorBlink: false
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".chef.ruby.source":
+  editor:
+    preferredLineLength: 120
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
+".diff.source":
+  editor:
+    preferredLineLength: 120
+    softWrapHangingIndent: 4
+".erb.html.text":
+  editor:
+    preferredLineLength: 120
+    softWrapHangingIndent: 4
+".gfm.source":
+  editor:
+    preferredLineLength: 120
+".gitignore.source":
+  editor:
+    preferredLineLength: 120
+".haml.text":
+  editor:
+    preferredLineLength: 120
+    softWrapHangingIndent: 4
+".hamlc.text":
+  editor:
+    preferredLineLength: 120
+    softWrapHangingIndent: 4
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120
+".js.regexp.replacement.source":
+  editor:
+    preferredLineLength: 120
+".js.regexp.source":
+  editor:
+    preferredLineLength: 120
+".js.source":
+  editor:
+    preferredLineLength: 120
+".log.source":
+  editor:
+    preferredLineLength: 120
+".org.text":
+  editor:
+    preferredLineLength: 120
+".ruby.source":
+  editor:
+    preferredLineLength: 120
+    softWrapHangingIndent: 4

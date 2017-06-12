@@ -1,0 +1,71 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.tree-view {
+
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+}
+
+atom-text-editor .gutter .line-number.git-line-modified,
+atom-text-editor::shadow .gutter .line-number.git-line-modified {
+  border-left: 2px solid #00c4ff;
+}
+
+
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .classname {
+}
+
+@cursor-color: #3AF;
+
+// Make I-beam cursor the color I want
+atom-text-editor.vim-mode-plus.insert-mode::shadow .cursor {
+  border-color: @cursor-color;
+}
+
+
+// Make block cursor more visible
+atom-text-editor.vim-mode-plus.normal-mode::shadow .cursor,
+atom-text-editor.vim-mode-plus.visual-mode::shadow .cursor,
+{
+  border: 1.5px solid @cursor-color !important;
+  border-radius: 3px;
+  box-shadow: 0 0 7px @cursor-color;
+  background: none !important;
+  opacity: 1 !important;
+}
+
+
+// Make selections more visible
+// atom-text-editor::shadow .selection .region {
+//   border: 1px solid rgb(97, 210, 255);
+//   background: rgba(70, 203, 255, .1) !important;
+//   box-shadow: 0 0 4px 0px rgb(75, 213, 255), 0 0 4px 0px rgb(75, 213, 255) inset;
+//   opacity: 1 !important;
+// }
+
+// Use blue for modified rather than orange.
+@blueish: #00c4ff;
+
+.status-modified, .status-modified > * {
+  color: fadeOut(@blueish, 20%) !important;
+}
+
+.minimap {
+  .git-line-modified{
+    background: fadeOut(@blueish, 50%);
+  }
+}
