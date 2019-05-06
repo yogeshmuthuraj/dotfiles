@@ -3,11 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/ym046440/.oh-my-zsh
-
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='awesome-patched'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -29,10 +25,10 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -83,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /Users/ym046440/antigen/antigen.zsh
+source /Users/ym046440/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -97,13 +93,26 @@ antigen bundle command-not-found
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
-
+antigen bundle robbyrussell/oh-my-zsh plugins/gitfast
+antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen apply
 # Tell Antigen that you're done.
 antigen apply
 
 USER=``
-
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh vcs)
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="powerlevel9k/powerlevel9k"
+export TERM=xterm-256color
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ssh vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator time)
 POWERLEVEL9K_HIDE_BRANCH_ICON=false
 POWERLEVEL9K_SHOW_CHANGESET=true
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+
+POWERLEVEL9K_OS_ICON_BACKGROUND="green"
+POWERLEVEL9K_OS_ICON_FOREGROUND="black"
+POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
